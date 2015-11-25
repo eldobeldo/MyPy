@@ -16,7 +16,7 @@ for row in reader:
     for i, x in enumerate(row):
                 if len(x)< 1:
                          x = row[i] = 0
-    f.write(','.join(str(x) for x in row))
+    f.write(','.join(int(x) for x in row))
     f.write('\n')
 
 f.close()
